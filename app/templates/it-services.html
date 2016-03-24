@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+{% block title %}iSurance{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+<div class="section hero">
+    <div class="container">
+      <div class="row">
+        <div class="one-half column">
+          <h4 class="hero-heading">IT Services</h4>
+          <p>There is nothing more frustrating than being in the middle of the work day and encountering a problem with your computer. Work flow screeches to a halt, and every passing minute equates to lost revenue. iScreenFix now offers friendly, reliable, and speedy IT support for your small to medium business. Our qualified technicians can operate remotely or onsite in order to make sure your downtime is minimized so you can work instead of worry.</p>
+        </div>
+        <div class="one-half column phones">
+          <img class="phone" src="{{ url_for('static', filename = 'images/iphone.png') }}">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section categories">
+    <div class="container">
+      <a name="services"><h3 class="section-heading">Services</h3></a>
+      <p class="section-description">
+        <li>On-site visits
+        <li>Troubleshooting and physical repairs</li>
+        <li>Phone support</li>
+        <li>Remote login troubleshooting and repair</li>
+      <div class="row">
+        <div class="one-half-image column category it-services">
+          <img "u-max-full-width" src="{{ url_for('static', filename = 'images/business.png') }}">
+          <ul class="column info">
+            <h2>Business</h2>
+            <p>Let us help streamline your small to medium-sized office</p>
+            <li>Network infrastucture &amp; optimization</li>
+            <li>Server installs</li>
+            <li>Security Systems</li>
+            <li>Cable installs</li>
+          </ul>
+        </div>
+        <div class="one-half-image column category it-services">
+          <img "u-max-full-width" src="{{ url_for('static', filename = 'images/personal.png') }}">
+          <ul class="column info">
+            <h2>Personal</h2>
+            <p>Our on-site techs come to you!</p>
+            <li>Slow wireless</li>
+            <li>Training</li>
+            <li>Internet systems (TVs, speakers, blue-ray players)</li>
+            <li>Security</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

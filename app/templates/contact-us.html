@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block title %}iSurance{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+<div class="section hero">
+  <div class="container">
+    <div class="row">
+      <div class="one-half column">
+        <h4 class="hero-heading">Contact Us</h4>
+        <p>iScreenFix Asheville</p>
+        <p>90 Westgate Pkwy Asheville, NC 28806</p>
+        <p>828.367.sFix (7349)</p>
+        <p>iscreenfixavl@iscreenfix.com</p>
+        <p>iScreenFix Myrtle Beach</p>
+        <p>981F Hackler St Myrtle Beach, SC 29577</p>
+        <p>843.900.4668</p>
+        <p>iscreenfixmb@iscreenfix.com</p>
+      </div>
+      <div class="one-half column phones">
+        <img class="phone" src="{{ url_for('static', filename = 'images/iphone.png') }}">
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

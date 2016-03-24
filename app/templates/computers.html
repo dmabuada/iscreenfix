@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block title %}iSurance{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+<div class="section hero">
+  <div class="container">
+    <div class="row">
+      <div class="one-half column">
+        <h4 class="hero-heading">Computer Repairs &amp; Upgrades</h4>
+        <p>Diagnostics and Troubleshooting:
+          Computer slowing down? Running out of storage space? Our certified technicians will help get your machine running smoothly agian. We quickly diagnose your Mac or PC and repair all software and hardware issues so you can get back to work as quickly as possible.</p>
+        <p>Upgrades:
+          Want more power? Tired of spinning wheels and stalling commands? Let us upgrade your machine and experience dramatic performance gains and, in some cases, improved battery life. Call today for more information!</p>
+      </div>
+      <div class="one-half column phones">
+        <img class="phone" src="{{ url_for('static', filename = 'images/iphone.png') }}">
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

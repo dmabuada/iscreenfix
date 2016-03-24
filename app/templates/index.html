@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+{% block title %}Home{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+<div class="section hero">
+<div class="container">
+  <div class="row">
+    <div class="one-half column">
+      <h4 class="hero-heading">Providing swift service and the utmost precision repairing our valued customers’ devices.</h4>
+      <a class="button button-primary" href="#locations" target="_self">Find a location</a>
+      <a class="button button-primary" href="/isurance" target="_self">iSurance ($4.99/mo)</a>
+    </div>
+    <div class="one-half column phones">
+      <img class="phone" src="{{ url_for('static', filename = 'images/iphone.png') }}">
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="section categories">
+<div class="container">
+  <h3 class="section-heading">Services</h3>
+  <div class="row">
+    <div class="one-half-image column category service">
+      <img class="u-max-full-width" src="{{ url_for('static', filename = 'images/smartphone.png') }}">
+      <ul class="column info">
+        <h2>Smartphones</h2>
+        <li>Cracked screens</li>
+        <li>Charging issues</li>
+        <li>Sound/audio</li>
+        <li>Water damage</li>
+      </ul>
+    </div>
+    <div class="one-half-image column category service">
+      <img class="u-max-full-width" src="{{ url_for('static', filename = 'images/pc.png') }}">
+      <ul class="column info">
+        <h2>PCs/Macs</h2>
+        <li>Cracked screens</li>
+        <li>Virus removal</li>
+        <li>OS upgrade/reinstall</li>
+        <li>Hardware/performance upgrades</li>
+      </ul>
+    </div>
+    <div class="one-half-image column category service">
+      <img class="u-max-full-width" src="{{ url_for('static', filename = 'images/ipad.png') }}">
+      <ul class="column info">
+        <h2>Tablets</h2>
+        <li>Cracked screens</li>
+        <li>Charging issues</li>
+        <li>Sound/audio</li>
+        <li>Water damage</li>
+      </ul>
+    </div>
+    <div class="one-half-image column category service">
+      <img class="u-max-full-width" src="{{ url_for('static', filename = 'images/tv.png') }}">
+      <ul class="column info">
+        <h2>Miscellaneous Devices</h2>
+        <li>TVs</li>
+        <li>Game systems</li>
+        <li>Cameras</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+{% endblock %}
