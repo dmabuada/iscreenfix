@@ -1,4 +1,4 @@
 import sys
 sys.path.insert(0, '/var/www/iscreenfix')
 
-from app import app as application
+from iscreenfix import app as application
