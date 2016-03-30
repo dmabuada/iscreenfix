@@ -9,6 +9,10 @@ def main():
 def isurance():
     return render_template('isurance.html')
 
+@app.route("/smartphones")
+def smartphones():
+    return render_template('smartphones.html')
+
 @app.route("/it-services")
 def it():
     return render_template('it-services.html')
@@ -21,9 +25,6 @@ def computers():
 def contact():
     return render_template('contact-us.html')
 
-@app.route("/smartphones")
-def smartphones():
-    return render_template('smartphones.html')
 
 if __name__ == "__main__":
     app.run()
