@@ -21,9 +21,9 @@ def computers():
 def contact():
     return render_template('contact-us.html')
 
-@app.route("/smartphones-tablets")
+@app.route("/smartphones")
 def smartphones():
-    return render_template('smartphones-tablets.html')
+    return render_template('smartphones.html')
 
 if __name__ == "__main__":
     app.run()
