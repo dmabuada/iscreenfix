@@ -141,6 +141,9 @@ a[name] {
 .section-description {
   margin-bottom: 1.2rem;
 }
+.flex-columns {
+  display: flex;
+}
 
 /* Hero
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

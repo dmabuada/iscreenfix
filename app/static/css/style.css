@@ -194,7 +194,9 @@ input[type="button"].button-primary:focus {
   color: #FFF;
   background-color: #087141;
   border-color: #087141; }
-
+.isurance {
+  text-transform: none;
+}
 
 /* Forms
  */

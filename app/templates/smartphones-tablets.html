@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block title %}iSurance{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+<div class="section hero">
+  <div class="container">
+    <div class="row">
+      <div class="one-half column">
+        <h4 class="hero-heading">Smartphones/Tablets</h4>
+        <p>Broken phone got you feeling down? Let the professionals at iScreenfix get your phone looking and
+        working like new again. Whether you have an android phone, blackberry, or iPhone rest assured we can
+        help! Most repairs are done within the hour, call today for a quote!</p>
+        <div class="flex-columns">
+          <div class="column">iOS<br>iPhone<br>iPad 2/3/4<br>iPad Mini<br>iPad Air</div>
+          <div class="column">Android<br>Samsung<br>LG<br>Nokia<br>ZTE</div>
+          <div class="column">Blackberry</div>
+        </div>
+      </div>
+      <div class="one-half column phones">
+        <img class="phone" src="{{ url_for('static', filename = 'images/iphone.png') }}">
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
